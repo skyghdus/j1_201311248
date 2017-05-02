@@ -1,4 +1,6 @@
-package com.sd.gui;
+//2017ë…„ 5ì›” 2ì¼ íŒ¨í‚¤ì§€ì£¼ì†Œ ìˆ˜ì •í•˜ì˜€ìŠµë‹ˆë‹¤.
+//package com.sd.gui;
+package com.sd.address.v0;
 
 import java.awt.event.*;
 import java.awt.*;
@@ -9,9 +11,9 @@ public class AddressBookGUIMain {
     JFrame f = new JFrame();
     JFrame r = new JFrame();
     Object[][] data = {
-      {"Á¤È£¿¬", 
+      {"ì •í˜¸ì—°", 
         "01062791476"},
-      {"È«±æµ¿", 
+      {"í™ê¸¸ë™", 
         "01012345678"}
     };
     String[] columnNames = {"Name", 
@@ -21,13 +23,13 @@ public class AddressBookGUIMain {
     JPanel panel2 = new JPanel(new GridLayout());
     f.getContentPane().add(panel);
     r.getContentPane().add(panel2);
-    JLabel label1 = new JLabel("ÀÌ¸§");
-    JLabel label2 = new JLabel("ÀüÈ­¹øÈ£");
+    JLabel label1 = new JLabel("ì´ë¦„");
+    JLabel label2 = new JLabel("ì „í™”ë²ˆí˜¸");
     JTextField nameTf1= new JTextField(20);
     JTextField phoneTf1= new JTextField(20);
     JScrollPane scrollPane = new JScrollPane(table);
-    JButton b1 = new JButton("ÀúÀå");
-    JButton b2 = new JButton("Á¦°Å");
+    JButton b1 = new JButton("ì €ì¥");
+    JButton b2 = new JButton("ì œê±°");
     b1.addActionListener(new AddressListener());
     b2.addActionListener(new AddressListener());
     panel.add(label1);
