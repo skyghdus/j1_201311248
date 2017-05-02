@@ -1,4 +1,6 @@
-package com.sd.gui;
+//2017ë…„ 5ì›” 2ì¼ íŒ¨í‚¤ì§€ì£¼ì†Œ ìˆ˜ì •í•˜ì˜€ìŠµë‹ˆë‹¤.
+//package com.sd.gui;
+package com.sd.address.v0;
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -10,16 +12,16 @@ class AddressListener implements ActionListener {
     //Object[][] data = {};
     //JTextField t = (JTextField)e.getSource();
     String cmd = e.getActionCommand();
-    if (cmd.equals("ÀúÀå")) {
-      System.out.println("ÀúÀå¹öÆ°");
+    if (cmd.equals("ì €ì¥")) {
+      System.out.println("ì €ì¥ë²„íŠ¼");
       //data += k;
       //t.setText("333333");
-      b.setText("ÀúÀåÇß½À´Ï´Ù.");
-    } else if (cmd.equals("Á¦°Å")) {
-      System.out.println("Á¦°Å¹öÆ°");
-      b.setText("Á¦°ÅÇß½À´Ï´Ù.");
+      b.setText("ì €ì¥í–ˆìŠµë‹ˆë‹¤.");
+    } else if (cmd.equals("ì œê±°")) {
+      System.out.println("ì œê±°ë²„íŠ¼");
+      b.setText("ì œê±°í–ˆìŠµë‹ˆë‹¤.");
     } else {
-      System.out.println("¹öÆ°À» XXX·Î º¯°æÇÏ¸é cmdµµ º¯°æµÈ´Ù");
+      System.out.println("ë²„íŠ¼ì„ XXXë¡œ ë³€ê²½í•˜ë©´ cmdë„ ë³€ê²½ëœë‹¤");
     }
   }
 }
