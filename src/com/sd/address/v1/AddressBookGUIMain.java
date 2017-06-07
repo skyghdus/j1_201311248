@@ -12,11 +12,11 @@ public class AddressBookGUIMain {
     JFrame f = new JFrame();
     JFrame r = new JFrame();
     Object[][] data = {
-      {"Á¤È£¿¬", 
+      {"ì •í˜¸ì—°", 
         "01062791476"},
-      {"È«±æµ¿", 
+      {"í™ê¸¸ë™", 
         "01012345678"},
-      {"È«±æµ¿", 
+      {"í™ê¸¸ë™", 
         "01012345678"}
     };
     String[] columnNames = {"Name", 
@@ -29,13 +29,13 @@ public class AddressBookGUIMain {
     f.getContentPane().add(panel);
     r.getContentPane().add(panel2);
     JLabel label3 = new JLabel("ID");
-    JLabel label1 = new JLabel("ÀÌ¸§");
-    JLabel label2 = new JLabel("ÀüÈ­¹øÈ£");
+    JLabel label1 = new JLabel("ì´ë¦„");
+    JLabel label2 = new JLabel("ì „í™”ë²ˆí˜¸");
     JLabel labelE = new JLabel(" ");
     JScrollPane scrollPane = new JScrollPane(table);
-    JButton b1 = new JButton("ÀúÀå");
-    JButton b2 = new JButton("Á¦°Å");
-    JButton b3 = new JButton("Ã£±â");
+    JButton b1 = new JButton("ì €ì¥");
+    JButton b2 = new JButton("ì œê±°");
+    JButton b3 = new JButton("ì°¾ê¸°");
     b1.addActionListener(new AddressListener());
     b2.addActionListener(new AddressListener());
     b3.addActionListener(new AddressListener());
@@ -54,7 +54,7 @@ public class AddressBookGUIMain {
     panel2.add(scrollPane);
     f.pack();
     f.setVisible(true);
-    r.pack();
-    r.setVisible(true);
+    //r.pack();
+    //r.setVisible(true);
   }
 }
