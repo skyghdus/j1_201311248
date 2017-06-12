@@ -40,6 +40,7 @@ public class PersonDAOImpl implements PersonDAO {
                 person.setId(rs.getInt("id"));
                 person.setName(rs.getString("name"));
                 person.setAddress(rs.getString("address"));
+                System.out.println("ID:"+rs.getInt("id")+" NAME: "+rs.getString("name")+" ADDRESS:"+rs.getString("address"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -55,7 +56,6 @@ public class PersonDAOImpl implements PersonDAO {
             PersonVO person = null;
             while(rs.next()){
                 person = new PersonVO();
-                //person.setId(Integer.parseInt(rs.getString("id")));
                 person.setId(rs.getInt("id"));
                 person.setName(rs.getString("name"));
                 person.setAddress(rs.getString("address"));
@@ -67,7 +67,7 @@ public class PersonDAOImpl implements PersonDAO {
             try {
                 if(stmt != null) stmt.close();
             } catch (Exception e) {};
- }
+        }
         System.out.println("* finding all..."+persons);
         return persons;
     }

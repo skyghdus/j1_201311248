@@ -3,6 +3,8 @@ package com.sd.address.v1;
 import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AddressBookGUIMain {
   public static JTextField nameTf1 = new JTextField(20);
@@ -10,51 +12,30 @@ public class AddressBookGUIMain {
   public static JTextField numberTf1 = new JTextField(20);
   public static void main(String[] args) {
     JFrame f = new JFrame();
-    JFrame r = new JFrame();
-    Object[][] data = {
-      {"ì •í˜¸ì—°", 
-        "01062791476"},
-      {"í™ê¸¸ë™", 
-        "01012345678"},
-      {"í™ê¸¸ë™", 
-        "01012345678"}
-    };
-    String[] columnNames = {"Name", 
-      "Phone Number"};
-    JTable table = new JTable(data, columnNames);
-    JPanel panel = new JPanel(new GridLayout(9,100));
-    JPanel panel2 = new JPanel(new GridLayout());
-    //f.getContentPane().add(panel);
-    //f.setSize(200,400);
+    JPanel panel = new JPanel(new GridLayout(10,100));
     f.getContentPane().add(panel);
-    r.getContentPane().add(panel2);
     JLabel label3 = new JLabel("ID");
-    JLabel label1 = new JLabel("ì´ë¦„");
-    JLabel label2 = new JLabel("ì „í™”ë²ˆí˜¸");
-    JLabel labelE = new JLabel(" ");
-    JScrollPane scrollPane = new JScrollPane(table);
-    JButton b1 = new JButton("ì €ì¥");
-    JButton b2 = new JButton("ì œê±°");
-    JButton b3 = new JButton("ì°¾ê¸°");
+    JLabel label1 = new JLabel("ÀÌ¸§");
+    JLabel label2 = new JLabel("ÀüÈ­¹øÈ£");
+    JButton b1 = new JButton("ÀúÀå");
+    JButton b2 = new JButton("Á¦°Å");
+    JButton b3 = new JButton("Ã£±â");
+    JButton b4 = new JButton("¼öÁ¤");
     b1.addActionListener(new AddressListener());
     b2.addActionListener(new AddressListener());
     b3.addActionListener(new AddressListener());
+    b4.addActionListener(new AddressListener());
     panel.add(label3);
     panel.add(numberTf1);
-    //panel.add(labelE);
     panel.add(label1);
     panel.add(nameTf1);
-    //panel.add(labelE);
     panel.add(label2);
     panel.add(phoneTf1);
-    //44panel.add(labelE);
     panel.add(b1);
     panel.add(b2);
     panel.add(b3);
-    panel2.add(scrollPane);
+    panel.add(b4);
     f.pack();
     f.setVisible(true);
-    //r.pack();
-    //r.setVisible(true);
   }
 }
