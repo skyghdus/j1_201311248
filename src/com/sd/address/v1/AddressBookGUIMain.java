@@ -1,3 +1,4 @@
+//ì½”ë“œ ì •ë¦¬ë¡œ ë‹¤ì‹œ ì—…ë¡œë“œ í•˜ì˜€ìŠµë‹ˆë‹¤.
 package com.sd.address.v1;
 
 import java.awt.event.*;
@@ -15,12 +16,12 @@ public class AddressBookGUIMain {
     JPanel panel = new JPanel(new GridLayout(10,100));
     f.getContentPane().add(panel);
     JLabel label3 = new JLabel("ID");
-    JLabel label1 = new JLabel("ÀÌ¸§");
-    JLabel label2 = new JLabel("ÀüÈ­¹øÈ£");
-    JButton b1 = new JButton("ÀúÀå");
-    JButton b2 = new JButton("Á¦°Å");
-    JButton b3 = new JButton("Ã£±â");
-    JButton b4 = new JButton("¼öÁ¤");
+    JLabel label1 = new JLabel("ì´ë¦„");
+    JLabel label2 = new JLabel("ì „í™”ë²ˆí˜¸");
+    JButton b1 = new JButton("ì €ì¥");
+    JButton b2 = new JButton("ì œê±°");
+    JButton b3 = new JButton("ì°¾ê¸°");
+    JButton b4 = new JButton("ìˆ˜ì •");
     b1.addActionListener(new AddressListener());
     b2.addActionListener(new AddressListener());
     b3.addActionListener(new AddressListener());
